@@ -111,6 +111,13 @@ function getRandom(arr) {
 
 // Function to generate password with user input
 function generatePassword() {
+  console.log("Button is working OK!")//Just for testing in console that the button is working.
+
+
+
+
+
+  return "Your password will be printed here" //Provisional message
 
 }
 
