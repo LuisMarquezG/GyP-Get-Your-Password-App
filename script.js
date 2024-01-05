@@ -122,6 +122,8 @@ function getPasswordOptions() {
     return; // try leave just return;
   }
 
+  //START HERE TOMORROW
+
 
 
   //If the previous vars works ok, try adding emojis
