@@ -100,16 +100,40 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
+//add to readme the explanation of this logic => create vars which are containing prompts
 function getPasswordOptions() {
+  //This is the prompt for the length of the password
+  var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters");
+  //These are the prompt for character types
+  //add to readme 
+  var includeLowerCase = confirm("Include lowercase characters?");
+  var includeUpperCase = confirm("Include lowercase characters?");
+  var includeNumeric = confirm("Include numeric characters?");
+  var includeSpecial = confirm("Include special characters?");
+
+  // console.log(includeLowerCase)
+
+  //This is for validating the input and ensure at least one character type is selected
+  if (passwordLength => 8 && passwordLength <= 128) {
+    alert("Password length must be between 8 and 128 characters.");
+    return; // what?
+  } else if (includeLowerCase || includeUpperCase || includeNumeric || includeSpecial) {
+    alert("At least one character type must be selected.")
+    return; // try leave just return;
+  }
+
+
+
+  //If the previous vars works ok, try adding emojis
 
 }
 
-// Function for getting a random element from an array
+// Function for getting a random element from an array*
 function getRandom(arr) {
 
 }
 
-// Function to generate password with user input
+// Function to generate password with user input*
 function generatePassword() {
   console.log("Button is working OK!")//Just for testing in console that the button is working.
 
@@ -120,6 +144,15 @@ function generatePassword() {
   return "Your password will be printed here" //Provisional message
 
 }
+
+
+
+
+
+
+
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
