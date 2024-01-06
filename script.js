@@ -114,15 +114,13 @@ function getPasswordOptions() {
   //If the previous vars works ok, try adding emojis
 
   //This is for validating the input and ensure at least one character type is selected
-
-  //IS NOT WORKING, CHECK THIS AGAIN, START HERE NEXT TIME
   if (passwordLength <= 8 || passwordLength >= 128) {
     alert("Password length must be between 8 and 128 characters.");
     return;
   } else if (includeLowerCase && includeUpperCase && includeNumeric && includeSpecial) {
     alert("At least one character type must be selected.")
     return;
-  }
+  } else { }
 
   //I will put the returns fron the user into an object, the key and its value will be the vars that I created before.
   return {
@@ -131,14 +129,13 @@ function getPasswordOptions() {
     includeUppercase: includeUpperCase,
     includeNumeric: includeNumeric,
     includeSpecial: includeSpecial
-  }
+  };
 }
 // Function for getting a random element from an array*
 // The logic is try to generate with the function a valid random index for the array passed as an argument and then returns the element corresponding to that index.
 function getRandom(arr) {
   var randomIndex = Math.floor(Math.random() * arr.length);
   return arr[randomIndex];
-
 }
 
 //at this point the app is working ok.
