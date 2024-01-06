@@ -112,6 +112,7 @@ function getPasswordOptions() {
   var includeSpecial = confirm("Include special characters?");
 
   // console.log(includeLowerCase)
+  //If the previous vars works ok, try adding emojis
 
   //This is for validating the input and ensure at least one character type is selected
   if (passwordLength => 8 && passwordLength <= 128) {
@@ -122,11 +123,20 @@ function getPasswordOptions() {
     return; // try leave just return;
   }
 
-  //START HERE TOMORROW
+  //I will put the returns fron the user into an object, the key and its value will be the vars that I created before.
+  return {
+    length: passwordLength,
+    includeLowercase: includeLowerCase,
+    includeUppercase: includeUpperCase,
+    includeNumeric: includeNumeric,
+    includeSpecial: includeSpecial
+  }
 
 
 
-  //If the previous vars works ok, try adding emojis
+
+
+
 
 }
 
