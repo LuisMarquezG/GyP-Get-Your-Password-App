@@ -107,7 +107,7 @@ function getPasswordOptions() {
   //These are the prompt for character types
   //add to readme 
   var includeLowerCase = confirm("Include lowercase characters?");
-  var includeUpperCase = confirm("Include lowercase characters?");
+  var includeUpperCase = confirm("Include uppercase characters?");
   var includeNumeric = confirm("Include numeric characters?");
   var includeSpecial = confirm("Include special characters?");
 
@@ -116,12 +116,12 @@ function getPasswordOptions() {
   //This is for validating the input and ensure at least one character type is selected
 
   //IS NOT WORKING, CHECK THIS AGAIN, START HERE NEXT TIME
-  if (passwordLength <= 8 && passwordLength >= 128) {
+  if (passwordLength <= 8 || passwordLength >= 128) {
     alert("Password length must be between 8 and 128 characters.");
-    return; // what?
-  } else if (includeLowerCase || includeUpperCase || includeNumeric || includeSpecial) {
+    return;
+  } else if (includeLowerCase && includeUpperCase && includeNumeric && includeSpecial) {
     alert("At least one character type must be selected.")
-    return; // try leave just return;
+    return;
   }
 
   //I will put the returns fron the user into an object, the key and its value will be the vars that I created before.
@@ -132,10 +132,7 @@ function getPasswordOptions() {
     includeNumeric: includeNumeric,
     includeSpecial: includeSpecial
   }
-
-
 }
-
 // Function for getting a random element from an array*
 // The logic is try to generate with the function a valid random index for the array passed as an argument and then returns the element corresponding to that index.
 function getRandom(arr) {
@@ -144,7 +141,7 @@ function getRandom(arr) {
 
 }
 
-
+//at this point the app is working ok.
 
 
 
@@ -158,13 +155,46 @@ function getRandom(arr) {
 
 // Function to generate password with user input*
 function generatePassword() {
-  console.log("Button is working OK!")//Just for testing in console that the button is working.
+  var options = getPasswordOptions();
+  if (options) {
+    return; // return if user input is invalid
+  } else { }
+
+  var possibleCharacters = [];
+  var guaranteedCharacters = [];
+
+  if (options.includeLowerCase) {
+    possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
+    guaranteedCharacters.push(getRandom(lowerCasedCharacters));
+  } else if (options.includeUpperCase) {
+    possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
+    guaranteedCharacters.push(getRandom(upperCasedCharacters));
+  } else if (options.includeNumeric) {
+    possibleCharacters = possibleCharacters.concat(numericCharacters);
+    guaranteedCharacters.push(getRandom(numericCharacters));
+  } else if (options.includeSpecial) {
+    possibleCharacters = possibleCharacters.concat(specialCharacters);
+    guaranteedCharacters.push(getRandom(specialCharacters));
+  } else { };
+
+
+  // Shuffle the guaranteed characters to ensure they appear in a random order
+  var remainingLength = options.length - guaranteedCharacters.length;
+  for (var i = 0; i < remainingLength; i++) {
+    var randomCharacter = getRandom(possibleCharacters);
+    guaranteedCharacters.push(randomCharacter);
+  }
+
+  // Return the generated password as a string
+  return guaranteedCharacters.join('');
+
+
+  // At this point the code isNOT working ok, try with Raul suggestion tomorrow => just use IFs and read about (!)
 
 
 
-
-
-  return "Your password will be printed here" //Provisional message
+  // console.log("Button is working OK!")//Just for testing in console that the button is working.
+  // return "Your password will be printed here" //Provisional message
 
 }
 
