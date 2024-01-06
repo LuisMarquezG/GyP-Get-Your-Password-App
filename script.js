@@ -111,11 +111,12 @@ function getPasswordOptions() {
   var includeNumeric = confirm("Include numeric characters?");
   var includeSpecial = confirm("Include special characters?");
 
-  // console.log(includeLowerCase)
   //If the previous vars works ok, try adding emojis
 
   //This is for validating the input and ensure at least one character type is selected
-  if (passwordLength => 8 && passwordLength <= 128) {
+
+  //IS NOT WORKING, CHECK THIS AGAIN, START HERE NEXT TIME
+  if (passwordLength <= 8 && passwordLength >= 128) {
     alert("Password length must be between 8 and 128 characters.");
     return; // what?
   } else if (includeLowerCase || includeUpperCase || includeNumeric || includeSpecial) {
@@ -133,17 +134,27 @@ function getPasswordOptions() {
   }
 
 
-
-
-
-
-
 }
 
 // Function for getting a random element from an array*
+// The logic is try to generate with the function a valid random index for the array passed as an argument and then returns the element corresponding to that index.
 function getRandom(arr) {
+  var randomIndex = Math.floor(Math.random() * arr.length);
+  return arr[randomIndex];
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Function to generate password with user input*
 function generatePassword() {
