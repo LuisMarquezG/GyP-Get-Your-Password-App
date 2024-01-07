@@ -23,7 +23,17 @@ This is the week 5 challenge, the project is create an app that generate safe pa
 
 - Then, the function getRandom(arr) generates a valid random index for the array passed as an argument and then returns the element corresponding to that index, as I understand, this fuction will provide the connection between the previous and the following logics.
    ![alt text](/assets/images/code-screenshots/3-getRandom.png)
-
+- From my point of view this is the core of the app, where the magic happens.
+  - This fuction generates a random password based on the options showed to the user.
+  - The function uses user-provided options to determine which types of characters to include in the password (lowercase, uppercase, numeric, special, emojis) and then generates a random password that meets those specifications. The final password is shuffled to ensure that guaranteed characters appear in a random order.
+    ![alt text](/assets/images/code-screenshots/4-generatePassword.png)
+  - These variables contain arrays that will be used in the if statment to generate the passwords.
+    ![alt text](/assets/images/code-screenshots/5-vars-in-generatePassword.png)
+  - With the concat method the diferent type of characters will show all together as a result for the user.
+  - The push method will put them in to the array.
+  - The random result will be generate by the getRandom function that is using as argument, the variables containing the arrays of characters.
+    ![alt text](/assets/images/code-screenshots/6-if-statement-generatePassword.png)
+    
 
     
 
