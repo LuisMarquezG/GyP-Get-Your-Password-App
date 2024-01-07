@@ -117,7 +117,7 @@ function getPasswordOptions() {
   if (passwordLength <= 8 || passwordLength >= 128) {
     alert("Password length must be between 8 and 128 characters.");
     return;
-  } else if (includeLowerCase && includeUpperCase && includeNumeric && includeSpecial) {
+  } else if (!includeLowerCase && !includeUpperCase && !includeNumeric && !includeSpecial) {
     alert("At least one character type must be selected.")
     return;
   } else { }
@@ -153,7 +153,7 @@ function getRandom(arr) {
 // Function to generate password with user input*
 function generatePassword() {
   var options = getPasswordOptions();
-  if (options) {
+  if (!options) {
     return; // return if user input is invalid
   } else { }
 
