@@ -1,9 +1,6 @@
 # GyP Get your Password App.
-
 ## Description
-
 This is the week 5 challenge, the project is to create an app that generates safe passwords.
-
 - With this app users will have safe passwords for using where they are required.
 - I have learned in this project:
   - How to use the method .concat.
@@ -11,9 +8,6 @@ This is the week 5 challenge, the project is to create an app that generates saf
   - How to use the method .join.
   - I can use if statements without else.
   - How to use "!" to force a result.
-
-
-
 ## Logic 
 - I have created all the variables that I will need to prompt the requirements for the users to generate the passwords, they will type the length of the password that they want.
   ![alt text](/assets/images/code-screenshots/1-getPasswordOptions.png)
@@ -37,12 +31,6 @@ This is the week 5 challenge, the project is to create an app that generates saf
     ![alt text](/assets/images/code-screenshots/7-shuffle-loop.png)
   - Finally, return guaranteedCharacters will show the password helped by the .join method that is in charge of joining all the elements in the array guaranteedCharacters.
     ![alt text](/assets/images/code-screenshots/8-getPassword-final-return.png)
-    
-    
-
-    
-
-
-
 ## License
 
+- MIT License Copyright (c) 2024 Luis Marquez-Garrido
