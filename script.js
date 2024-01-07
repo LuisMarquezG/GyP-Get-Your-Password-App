@@ -97,8 +97,8 @@ var emojiCharacters = [
 function getPasswordOptions() {
   //This is the prompt for the length of the password
   var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters");
+
   //These are the prompt for character types
-  //add to readme 
   var includeLowerCase = confirm("Include lowercase characters?");
   var includeUpperCase = confirm("Include uppercase characters?");
   var includeNumeric = confirm("Include numeric characters?");
@@ -115,7 +115,7 @@ function getPasswordOptions() {
     return;
   } else { };
 
-  //I will put the returns fron the user into an object, the key and its value will be the vars that I created before.
+  //I will put the returns from the user into an object, the key and its value will be the vars that I created before.
   return {
     length: passwordLength,
     includeLowercase: includeLowerCase,
@@ -137,7 +137,7 @@ function getRandom(arr) {
 
 
 //Password Generator Logic.=> To understand this logic please go to README.MD---------------------------------------------------------------------------------------
-// Function to generate password with user input.  => To understand this logic please go to README.MD
+// Function to generate password with user input. 
 function generatePassword() {
   var options = getPasswordOptions();
   if (!options) {
@@ -147,8 +147,6 @@ function generatePassword() {
   var possibleCharacters = [];
   var guaranteedCharacters = [];
 
-  //options.keys
-  //Why this code is working withuot else????????????
   if (options.includeLowercase) {
     possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
     guaranteedCharacters.push(getRandom(lowerCasedCharacters));
