@@ -105,10 +105,11 @@ function getPasswordOptions() {
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password length must be between 8 and 128 characters.");
     return;
-  } else if (!includeLowerCase && !includeUpperCase && !includeNumeric && !includeSpecial) {
-    alert("At least one character type must be selected.")
+  }
+  else if (!includeLowerCase && !includeUpperCase && !includeNumeric && !includeSpecial && !includeEmoji) {
+    alert("At least one character type must be selected.");
     return;
-  } else { }
+  } else { };
 
   //I will put the returns fron the user into an object, the key and its value will be the vars that I created before.
   return {
@@ -148,19 +149,25 @@ function generatePassword() {
   var possibleCharacters = [];
   var guaranteedCharacters = [];
 
-  if (options.includeLowerCase) {
+
+  //options.keys
+  //Why this code is working withuot else????????????
+  if (options.includeLowercase) {
     possibleCharacters = possibleCharacters.concat(lowerCasedCharacters);
     guaranteedCharacters.push(getRandom(lowerCasedCharacters));
-  } else if (options.includeUpperCase) {
+  }
+  if (options.includeUppercase) {
     possibleCharacters = possibleCharacters.concat(upperCasedCharacters);
     guaranteedCharacters.push(getRandom(upperCasedCharacters));
-  } else if (options.includeNumeric) {
+  }
+  if (options.includeNumeric) {
     possibleCharacters = possibleCharacters.concat(numericCharacters);
     guaranteedCharacters.push(getRandom(numericCharacters));
-  } else if (options.includeSpecial) {
+  }
+  if (options.includeSpecial) {
     possibleCharacters = possibleCharacters.concat(specialCharacters);
     guaranteedCharacters.push(getRandom(specialCharacters));
-  } else { };
+  }
 
 
   // Shuffle the guaranteed characters to ensure they appear in a random order
