@@ -1,15 +1,3 @@
-// Generate a password when the button is clicked
-// Present a series of prompts for password criteria
-// Length of password
-// At least 8 characters but no more than 128.
-// Character types
-// Lowercase
-// Uppercase
-// Numeric
-// Special characters ($@%&*, etc)
-// Code should validate for each input and at least one character type should be selected
-// Once prompts are answered then the password should be generated and displayed in an alert or written to the page
-// Array of special characters to be included in password
 var specialCharacters = [
   '@',
   '%',
@@ -114,7 +102,7 @@ function getPasswordOptions() {
   //If the previous vars works ok, try adding emojis
 
   //This is for validating the input and ensure at least one character type is selected
-  if (passwordLength <= 8 || passwordLength >= 128) {
+  if (passwordLength < 8 || passwordLength > 128) {
     alert("Password length must be between 8 and 128 characters.");
     return;
   } else if (!includeLowerCase && !includeUpperCase && !includeNumeric && !includeSpecial) {
@@ -138,7 +126,7 @@ function getRandom(arr) {
   return arr[randomIndex];
 }
 
-//at this point the app is working ok.
+
 
 
 
