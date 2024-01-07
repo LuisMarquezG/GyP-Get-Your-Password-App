@@ -2,16 +2,19 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This is the week 5 challenge, the project is create an app that generate safe passwords.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- With this app users will have safe passwords for using where they are required.
+- I have learned in this project:
+  - How to use the method .concat.
+  - How to use the function getRandom().
+  - How to use the method .join.
+  - I can use if statements with out else.
+  - How to use "!" to force a result.
 
 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+## Logic 
 
     ```md
     ![alt text](assets/images/screenshot.png)
