@@ -91,8 +91,9 @@ var emojiCharacters = [
   '😀', '😬', '😁', '😂', '😃', '😄', '🤣', '😅', '😆', '😇', '😉', '😊', '🙂', '🙃', '😋', '😌', '😍', '😘', '😗', '😙', '😚', '🤪', '😜', '😝', '😛', '🤑', '😎', '🤓', '🧐', '🤠', '🤗', '🤡', '😏', '😶', '😐', '😑', '😒', '🙄', '🤨', '🤔', '🤫', '🤭', '🤥', '😳', '😞', '😟', '😠', '😡', '🤬', '😔', '😕', '🙁', '😣', '😖', '😫', '😩', '😤', '😮', '😱', '😨', '😰', '😯', '😦', '😧', '😢', '😥', '😪', '🤤', '😓', '😭', '🤩', '😵', '😲', '🤯', '🤐', '😷', '🤕', '🤒', '🤮', '🤢', '🤧', '😴', '💤', '😈', '👿', '👹', '👺', '💩', '👻', '💀', '☠', '👽', '🤖', '🎃', '😺', '😸', '😹', '😻', '😼', '😽', '🙀', '😿', '😾', '👐', '🤲', '🙌', '👏', '🙏', '🤝', '👍', '👎', '👊', '✊', '🤛', '🤜', '🤞', '🤘', '🤟', '👌', '👈', '👉', '👆', '👇', '✋', '🤚', '🖐', '🖖', '👋', '🤙', '💪', '🖕', '🤳', '💅', '👄', '👅', '👂', '👃', '👁', '👀', '🧠', '👤', '👥', '🗣', '👶', '🧒', '👦', '👧', '🧑', '👨', '🧔', '👱‍♂️', '👩', '👱‍♀️', '🧓', '👴', '👵', '👲', '👳‍♀️', '👳‍♂️', '🧕', '👮‍♀️', '👮‍♂️', '👩‍🚒', '👨‍🚒', '👷‍♀️', '👷‍♂️', '👩‍🏭', '👨‍🏭', '👩‍🔧', '👨‍🔧', '👩‍🌾', '👨‍🌾', '👩‍🍳', '👨‍🍳', '👩‍🎤', '👨‍🎤', '👩‍🎨', '👨‍🎨', '👩‍🏫', '👨‍🏫', '👩‍🎓', '👨‍🎓', '👩‍💼', '👨‍💼', '👩‍💻', '👨‍💻', '👩‍🔬', '👨‍🔬', '👩‍🚀', '👨‍🚀', '👩‍⚕️', '👨‍⚕️', '👩‍⚖️', '👨‍⚖️', '👩‍✈️', '👨‍✈️', '💂‍♀️', '💂‍♂️', '🕵️‍♀️', '🕵️‍♂️', '🤶', '🎅', '👼', '👸', '🤴', '👰', '🤵‍♀️', '🤵', '🕴️‍♀️', '🕴', '🧙‍♀️', '🧙‍♂️', '🧝‍♀️', '🧝‍♂️', '🧚‍♀️', '🧚‍♂️', '🧞‍♀️', '🧞‍♂️', '🧜‍♀️', '🧜‍♂️', '🧛‍♀️', '🧛‍♂️', '🧟‍♀️', '🧟‍♂️', '🙇‍♀️', '🙇‍♂️', '💁‍♀️', '💁‍♂️', '🙅‍♀️', '🙅‍♂️', '🙆‍♀️', '🙆‍♂️', '🤷‍♀️', '🤷‍♂️', '🙋‍♀️', '🙋‍♂️', '🤦‍♀️', '🤦‍♂️', '🙎‍♀️', '🙎‍♂️', '🙍‍♀️', '🙍‍♂️', '💇‍♀️', '💇‍♂️', '💆‍♀️', '💆‍♂️', '🤰', '🤱', '🚶‍♀️', '🚶‍♂️', '🏃‍♀️', '🏃‍♂️', '💃', '🕺', '👯‍♀️', '👯‍♂️', '👫', '👬', '👭', '💑', '👩‍❤️‍👩', '👨‍❤️‍👨', '💏', '👩‍❤️‍💋‍👩', '👨‍❤️‍💋‍👨', '👪', '👨‍👩‍👧', '👨‍👩‍👧‍👦', '👨‍👩‍👦‍👦', '👨‍👩‍👧‍👧', '👩‍👩‍👦', '👩‍👩‍👧', '👩‍👩‍👧‍👦', '👩‍👩‍👦‍👦', '👩‍👩‍👧‍👧', '👨‍👨‍👦', '👨‍👨‍👧', '👨‍👨‍👧‍👦', '👨‍👨‍👦‍👦', '👨‍👨‍👧‍👧', '👩‍👦', '👩‍👧', '👩‍👦‍👦', '👩‍👧‍👧', '👨‍👦', '👨‍👧', '👨‍👧‍👦', '👨‍👦‍👦', '👨‍👧‍👧', '👚', '👕', '🧥', '👖', '👔', '👗', '👙', '👘', '💄', '💋', '👣', '🧦', '👠', '👡', '👢', '👞', '👟', '🧢', '👒', '🎩', '🎓', '👑', '⛑', '🎒', '👝', '👛', '👜', '💼', '👓', '🕶', '🧣', '🧤', '💍', '🌂'
 ];
 
-// Function to prompt user for password options
-//add to readme the explanation of this logic => create vars which are containing prompts
+
+//Prompts Logic  => To understand this logic please go to README.MD
+// Function to prompt user for password options  
 function getPasswordOptions() {
   //This is the prompt for the length of the password
   var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters");
@@ -104,9 +105,7 @@ function getPasswordOptions() {
   var includeSpecial = confirm("Include special characters?");
   var includeEmoji = confirm("Include emoji characters?")
 
-  //If the previous vars works ok, try adding emojis
-
-  //This is for validating the input and ensure at least one character type is selected
+  //This is for validating the input and ensure at least one character type is selected.  => To understand this logic please go to README.MD------------------------
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password length must be between 8 and 128 characters.");
     return;
@@ -126,7 +125,10 @@ function getPasswordOptions() {
     includeEmoji: includeEmoji
   };
 }
-// Function for getting a random element from an array*
+
+
+//Getting Random Logic  => To understand this logic please go to README.MD------------------------------------------------------------------------------------------
+// Function for getting a random element from an array. 
 // The logic is try to generate with the function a valid random index for the array passed as an argument and then returns the element corresponding to that index.
 function getRandom(arr) {
   var randomIndex = Math.floor(Math.random() * arr.length);
@@ -134,18 +136,8 @@ function getRandom(arr) {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-// Function to generate password with user input*
+//Password Generator Logic.=> To understand this logic please go to README.MD---------------------------------------------------------------------------------------
+// Function to generate password with user input.  => To understand this logic please go to README.MD
 function generatePassword() {
   var options = getPasswordOptions();
   if (!options) {
@@ -154,7 +146,6 @@ function generatePassword() {
 
   var possibleCharacters = [];
   var guaranteedCharacters = [];
-
 
   //options.keys
   //Why this code is working withuot else????????????
@@ -179,8 +170,7 @@ function generatePassword() {
     guaranteedCharacters.push(getRandom(emojiCharacters));
   }
 
-
-  // Shuffle the guaranteed characters to ensure they appear in a random order
+  // Shuffle the guaranteed characters to ensure they appear in a random order. 
   var remainingLength = options.length - guaranteedCharacters.length;
   for (var i = 0; i < remainingLength; i++) {
     var randomCharacter = getRandom(possibleCharacters);
@@ -190,24 +180,12 @@ function generatePassword() {
   // Return the generated password as a string
   return guaranteedCharacters.join('');
 
-
-  // At this point the code isNOT working ok, try with Raul suggestion tomorrow => just use IFs and read about (!)
-
-
-
   // console.log("Button is working OK!")//Just for testing in console that the button is working.
   // return "Your password will be printed here" //Provisional message
-
 }
 
 
-
-
-
-
-
-
-
+// Code given done---------------------------------------------------------------------------.
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
