@@ -15,10 +15,17 @@ This is the week 5 challenge, the project is create an app that generate safe pa
 
 
 ## Logic 
+- I have created all the variables that I will need to prompt the requirements for the users to generate the passwords, they will type the length of the password that they want.
+  ![alt text](/assets/images/code-screenshots/1-getPasswordOptions.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+- I have created an object called return and I storage there all the variables previously created with a value that I will use later for generate the password
+  ![alt text](/assets/images/code-screenshots/2-prompts-logic.png)
+
+- Then, the function getRandom(arr) generates a valid random index for the array passed as an argument and then returns the element corresponding to that index, as I understand, this fuction will provide the connection between the previous and the following logics.
+   ![alt text](/assets/images/code-screenshots/3-getRandom.png)
+
+
+    
 
 
 
