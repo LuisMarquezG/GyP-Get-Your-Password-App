@@ -96,7 +96,7 @@ var emojiCharacters = [
 // Function to prompt user for password options  
 function getPasswordOptions() {
   //This is the prompt for the length of the password
-  var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters");
+  var passwordLength = prompt("Enter the length of the password (between 8 and 128 characters)");
 
   //These are the prompt for character types
   var includeLowerCase = confirm("Include lowercase characters?");
